@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
-
+use App\Http\Controllers\EditorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,6 +41,7 @@ Route::group(['middleware' => 'editor'], function(){
     Route::get('/editors/home', function () {
         return view('editors.home');
     });
+    Route::get('/editors/view',[EditorController::class, 'view']);
 
 });
 
