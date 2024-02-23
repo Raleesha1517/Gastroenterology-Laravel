@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\EditorController;
+use App\Http\Controllers\IBDController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,6 +35,11 @@ Route::group(['middleware' => 'viewer'], function(){
     Route::get('/viewers/home', function () {
         return view('viewers.home');
     });
+    //IBD
+    Route::get('/viewers/IBD/view',[IBDController::class, 'list']);
+    Route::get('/viewers/IBD/add',[IBDController::class, 'add']);
+    Route::post('/viewers/IBD/add',[IBDController::class, 'insert']);
+
 
 });
 
