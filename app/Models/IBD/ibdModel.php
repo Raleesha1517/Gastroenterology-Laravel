@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\IBD;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -18,9 +18,5 @@ class ibdModel extends Model
         'FamilyHistoryOfBowelCA', 'DegreeOfRelationBowelCA',
         'Consanguinity', 'DegreeOfConsanguinity'
     ];
-    // static public function getRecords()
-    // {
-    //     $return =  self::select('raleesha.*');
-    //     return $return;
-    // }
 }
+
