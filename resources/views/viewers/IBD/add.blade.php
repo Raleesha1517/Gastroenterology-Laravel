@@ -461,7 +461,152 @@
         </section>
       </div>
 
-      
+      <h4>Laboratory Investigations</h4>
+      <section>
+        <div class="form-group">
+          <label for="Hemoglobin">Hemoglobin</label>
+          <input type="text" name="Hemoglobin" class="form-control" id="Hemoglobin">
+      </div>
+      <div class="form-group">
+          <label for="MeanCorpuscularVolume">Mean Corpuscular Volume</label>
+          <input type="text" name="MeanCorpuscularVolume" class="form-control" id="MeanCorpuscularVolume">
+      </div>
+      <div class="form-group">
+          <label for="WhiteBloodCellCount">White Blood Cell Count</label>
+          <input type="text" name="WhiteBloodCellCount" class="form-control" id="WhiteBloodCellCount">
+      </div>
+      <div class="form-group">
+          <label for="PlateletCount">Platelet Count</label>
+          <input type="text" name="PlateletCount" class="form-control" id="PlateletCount">
+      </div>
+      <div class="form-group">
+          <label for="ESR">ESR</label>
+          <input type="text" name="ESR" class="form-control" id="ESR">
+      </div>
+      <div class="form-group">
+          <label for="CRP">CRP</label>
+          <input type="text" name="CRP" class="form-control" id="CRP">
+      </div>
+      <div class="form-group">
+          <label for="Haematocrit">Haematocrit</label>
+          <input type="text" name="Haematocrit" class="form-control" id="Haematocrit">
+      </div>
+      <div class="form-group">
+          <label for="Albumin">Albumin</label>
+          <input type="text" name="Albumin" class="form-control" id="Albumin">
+      </div>
+      <div class="form-group">
+          <label for="SerumTotalBilirubin">Serum Total Bilirubin</label>
+          <input type="text" name="SerumTotalBilirubin" class="form-control" id="SerumTotalBilirubin">
+      </div>
+      <div class="form-group">
+          <label for="ALT">ALT</label>
+          <input type="text" name="ALT" class="form-control" id="ALT">
+      </div>
+      <div class="form-group">
+          <label for="AST">AST</label>
+          <input type="text" name="AST" class="form-control" id="AST">
+      </div>
+      <div class="form-group">
+          <label for="GGT">GGT</label>
+          <input type="text" name="GGT" class="form-control" id="GGT">
+      </div>
+      <div class="form-group">
+          <label for="Urea">Urea</label>
+          <select name="Urea" class="form-control" id="Urea">
+              <option value="Positive">Positive</option>
+              <option value="Negative" selected>Negative</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="FaecalCalprotectin">Faecal Calprotectin</label>
+          <select name="FaecalCalprotectin" class="form-control" id="FaecalCalprotectin">
+              <option value="Positive">Positive</option>
+              <option value="Negative" selected>Negative</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="FaecalLactoferrin">Faecal Lactoferrin</label>
+          <select name="FaecalLactoferrin" class="form-control" id="FaecalLactoferrin">
+              <option value="Positive">Positive</option>
+              <option value="Negative" selected>Negative</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="StoolOccultBlood">Stool Occult Blood</label>
+          <select name="StoolOccultBlood" class="form-control" id="StoolOccultBlood">
+              <option value="Positive">Positive</option>
+              <option value="Negative" selected>Negative</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="StoolCulture">Stool Culture</label>
+          <select name="StoolCulture" class="form-control" id="StoolCulture">
+              <option value="Positive">Positive</option>
+              <option value="Negative" selected>Negative</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="StoolCultureOrganism">Stool Culture Organism</label>
+          <textarea name="StoolCultureOrganism" class="form-control" id="StoolCultureOrganism"></textarea>
+      </div>
+      <div class="form-group">
+          <label for="TuberculosisWorkup">Tuberculosis Workup</label>
+          <select name="TuberculosisWorkup" class="form-control" id="TuberculosisWorkup">
+              <option value="Done">Done</option>
+              <option value="Not done" selected>Not done</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="TuberculosisResult">Tuberculosis Result</label>
+          <select name="TuberculosisResult" class="form-control" id="TuberculosisResult">
+              <option value="Positive">Positive</option>
+              <option value="Negative" selected>Negative</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="GeneticTesting">Genetic Testing</label>
+          <select name="GeneticTesting" class="form-control" id="GeneticTesting">
+              <option value="Done">Done</option>
+              <option value="Not done" selected>Not done</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="GeneticTestingResults">Genetic Testing Results</label>
+          <textarea name="GeneticTestingResults" class="form-control" id="GeneticTestingResults"></textarea>
+      </div>
+      <div class="form-group">
+          <label for="MRI">MRI</label>
+          <select name="MRI" class="form-control" id="MRI">
+              <option value="Done">Done</option>
+              <option value="Not done" selected>Not done</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="MRI_Date">MRI Date</label>
+          <input type="date" name="MRI_Date" class="form-control" id="MRI_Date">
+      </div>
+      <div class="form-group">
+          <label for="MRI_Results">MRI Results</label>
+          <textarea name="MRI_Results" class="form-control" id="MRI_Results"></textarea>
+      </div>
+      <div class="form-group">
+          <label for="CECT">CECT</label>
+          <select name="CECT" class="form-control" id="CECT">
+              <option value="Done">Done</option>
+              <option value="Not done" selected>Not done</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="CECT_Date">CECT Date</label>
+          <input type="date" name="CECT_Date" class="form-control" id="CECT_Date">
+      </div>
+      <div class="form-group">
+          <label for="CECT_Results">CECT Results</label>
+          <textarea name="CECT_Results" class="form-control" id="CECT_Results"></textarea>
+      </div>
+      </section>
+
 
   </div>
   <!-- /.card-body -->

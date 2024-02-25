@@ -83,6 +83,38 @@ class IBDController extends Controller
             'pyodermaGangrenosum' => 'required|in:Yes,No',
             'oedema' => 'required|in:Yes,No',
             'others' => 'nullable|string|max:255',
+
+            //laboratory 
+
+            'ClinicalID' => 'required|integer', // Example validation rule for ClinicalID
+            'Hemoglobin' => 'nullable|numeric', // Example validation rule for Hemoglobin
+            'MeanCorpuscularVolume' => 'nullable|numeric', // Example validation rule for MeanCorpuscularVolume
+            'WhiteBloodCellCount' => 'nullable|numeric', // Example validation rule for WhiteBloodCellCount
+            'PlateletCount' => 'nullable|numeric', // Example validation rule for PlateletCount
+            'ESR' => 'nullable|numeric', // Example validation rule for ESR
+            'CRP' => 'nullable|numeric', // Example validation rule for CRP
+            'Haematocrit' => 'nullable|numeric', // Example validation rule for Haematocrit
+            'Albumin' => 'nullable|numeric', // Example validation rule for Albumin
+            'SerumTotalBilirubin' => 'nullable|numeric', // Example validation rule for SerumTotalBilirubin
+            'ALT' => 'nullable|numeric', // Example validation rule for ALT
+            'AST' => 'nullable|numeric', // Example validation rule for AST
+            'GGT' => 'nullable|numeric', // Example validation rule for GGT
+            'Urea' => 'nullable|in:Positive,Negative', // Example validation rule for Urea
+            'FaecalCalprotectin' => 'nullable|in:Positive,Negative', // Example validation rule for FaecalCalprotectin
+            'FaecalLactoferrin' => 'nullable|in:Positive,Negative', // Example validation rule for FaecalLactoferrin
+            'StoolOccultBlood' => 'nullable|in:Positive,Negative', // Example validation rule for StoolOccultBlood
+            'StoolCulture' => 'nullable|in:Positive,Negative', // Example validation rule for StoolCulture
+            'StoolCultureOrganism' => 'nullable|string', // Example validation rule for StoolCultureOrganism
+            'TuberculosisWorkup' => 'nullable|in:Done,Not done', // Example validation rule for TuberculosisWorkup
+            'TuberculosisResult' => 'nullable|in:Positive,Negative', // Example validation rule for TuberculosisResult
+            'GeneticTesting' => 'nullable|in:Done,Not done', // Example validation rule for GeneticTesting
+            'GeneticTestingResults' => 'nullable|string', // Example validation rule for GeneticTestingResults
+            'MRI' => 'nullable|in:Done,Not done', // Example validation rule for MRI
+            'MRI_Date' => 'nullable|date', // Example validation rule for MRI_Date
+            'MRI_Results' => 'nullable|string', // Example validation rule for MRI_Results
+            'CECT' => 'nullable|in:Done,Not done', // Example validation rule for CECT
+            'CECT_Date' => 'nullable|date', // Example validation rule for CECT_Date
+            'CECT_Results' => 'nullable|string', // Example validation rule for CECT_Results
         ]);
         
         $ibd = ibdModel::create([
@@ -152,7 +184,38 @@ class IBDController extends Controller
             'Oedema' => $data['oedema'],
         ]);
 
-        
+        $ibd->ibdLaboratory()->create([
+            'ClinicalID' => $ibd->ClinicalID,
+            'Hemoglobin' => $data['Hemoglobin'],
+            'MeanCorpuscularVolume' => $data['MeanCorpuscularVolume'],
+            'WhiteBloodCellCount' => $data['WhiteBloodCellCount'],
+            'PlateletCount' => $data['PlateletCount'],
+            'ESR' => $data['ESR'],
+            'CRP' => $data['CRP'],
+            'Haematocrit' => $data['Haematocrit'],
+            'Albumin' => $data['Albumin'],
+            'SerumTotalBilirubin' => $data['SerumTotalBilirubin'],
+            'ALT' => $data['ALT'],
+            'AST' => $data['AST'],
+            'GGT' => $data['GGT'],
+            'Urea' => $data['Urea'],
+            'FaecalCalprotectin' => $data['FaecalCalprotectin'],
+            'FaecalLactoferrin' => $data['FaecalLactoferrin'],
+            'StoolOccultBlood' => $data['StoolOccultBlood'],
+            'StoolCulture' => $data['StoolCulture'],
+            'StoolCultureOrganism' => $data['StoolCultureOrganism'],
+            'TuberculosisWorkup' => $data['TuberculosisWorkup'],
+            'TuberculosisResult' => $data['TuberculosisResult'],
+            'GeneticTesting' => $data['GeneticTesting'],
+            'GeneticTestingResults' => $data['GeneticTestingResults'],
+            'MRI' => $data['MRI'],
+            'MRI_Date' => $data['MRI_Date'],
+            'MRI_Results' => $data['MRI_Results'],
+            'CECT' => $data['CECT'],
+            'CECT_Date' => $data['CECT_Date'],
+            'CECT_Results' => $data['CECT_Results'],
+        ]);
+
 
         return redirect('viewers/home');
     }
