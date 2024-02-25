@@ -4,12 +4,14 @@ namespace App\Models\IBD;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\IBD\IbdPresentationModel;
 
 class ibdModel extends Model
 {
     use HasFactory;
 
     protected $table = 'ibdpatientinformation';
+    protected $primaryKey = 'ClinicalID';
     protected $fillable = [
         'Name', 'Gender', 'Ethnicity', 'DateOfBirth', 'Age',
         'Address', 'ContactNo', 'AgeOfSymptomOnset', 'DurationOfSymptoms',
@@ -18,5 +20,10 @@ class ibdModel extends Model
         'FamilyHistoryOfBowelCA', 'DegreeOfRelationBowelCA',
         'Consanguinity', 'DegreeOfConsanguinity'
     ];
+
+    public function ibdPresentation()
+    {
+        return $this->hasOne(IbdPresentationModel::class, 'ClinicalID', 'ClinicalID');
+    }
 }
 

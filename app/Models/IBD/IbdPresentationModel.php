@@ -11,6 +11,7 @@ class IbdPresentationModel extends Model
 
     protected $table = 'ibdpresentationdiagnosis';
     protected $fillable = [
+        'ClinicalID',
         'Fever',
         'OralUlcers',
         'OralGranulomatosis',

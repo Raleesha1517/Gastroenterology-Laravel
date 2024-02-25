@@ -367,6 +367,7 @@
                             <label for="others">Others</label>
                             <input type="text" name="others" class="form-control" id="others" placeholder="Enter others">
                         </div>
+                        
                     </div>
                     <!-- /.card-body -->
                     <div class="card-footer">
