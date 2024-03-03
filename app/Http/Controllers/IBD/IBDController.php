@@ -216,6 +216,79 @@ class IBDController extends Controller
             'CECT_Results' => $data['CECT_Results'],
         ]);
 
+        //<?php
+
+        // Assuming you have already imported the necessary models and set up your routes and controllers
+
+        // Inside your controller method handling the form submission
+
+        // Retrieve data from the form for UGIE
+        $UGIE_Date = $request->input('UGIE_Date');
+        $UGIE_Esophagus_endoscopy = $request->input('UGIE_Esophagus_endoscopy');
+        $UGIE_Esophagus_histology = implode(',', $request->input('UGIE_Esophagus_histology'));
+        $Stomach_endoscopy = $request->input('Stomach_endoscopy');
+        $Stomach_histology = implode(',', $request->input('Stomach_histology'));
+        $Duodenum_endoscopy = $request->input('Duodenum_endoscopy');
+        $Duodenum_histology = implode(',', $request->input('Duodenum_histology'));
+
+        // Retrieve data from the form for LGIE
+        $LGIE_Date = $request->input('LGIE_Date');
+        $LGIE_Terminal_Ileum_endoscopy = $request->input('LGIE_Terminal_Ileum_endoscopy');
+        $LGIE_Terminal_Ileum_histology = implode(',', $request->input('LGIE_Terminal_Ileum_histology'));
+        $Caecum_endoscopy = $request->input('Caecum_endoscopy');
+        $Caecum_histology = implode(',', $request->input('Caecum_histology'));
+        $Ascending_Colon_endoscopy = $request->input('Ascending_Colon_endoscopy');
+        $Ascending_Colon_histology = $request->input('Ascending_Colon_histology');
+
+        // Create records in the database using Eloquent ORM
+        $ibd->ibdImaging()->create([
+            'UGIE_Date' => $UGIE_Date,
+            'UGIE_Esophagus_endoscopy' => $UGIE_Esophagus_endoscopy,
+            'UGIE_Esophagus_histology' => $UGIE_Esophagus_histology,
+            'Stomach_endoscopy' => $Stomach_endoscopy,
+            'Stomach_histology' => $Stomach_histology,
+            'Duodenum_endoscopy' => $Duodenum_endoscopy,
+            'Duodenum_histology' => $Duodenum_histology,
+        ]);
+
+        $ibd->ibdImaging()->create([
+            'LGIE_Date' => $LGIE_Date,
+            'LGIE_Terminal_Ileum_endoscopy' => $LGIE_Terminal_Ileum_endoscopy,
+            'LGIE_Terminal_Ileum_histology' => $LGIE_Terminal_Ileum_histology,
+            'Caecum_endoscopy' => $Caecum_endoscopy,
+            'Caecum_histology' => $Caecum_histology,
+            'Ascending_Colon_endoscopy' => $Ascending_Colon_endoscopy,
+            'Ascending_Colon_histology' => $Ascending_Colon_histology,
+        ]);
+
+        $ibd->ibdDiseaseActivity()->create([
+            'age_at_diagnosis' => $request->input('age_at_diagnosis'),
+            'disease_location_cd' => $request->input('disease_location_cd'),
+            'disease_behavior_cd' => $request->input('disease_behavior_cd'),
+            'disease_location_uc' => $request->input('disease_location_uc'),
+            'disease_behavior_uc' => $request->input('disease_behavior_uc'),
+            'perianal_disease_modifier' => $request->input('perianal_disease_modifier'),
+            'growth' => $request->input('growth'),
+            'PCDAI_total_score' => $request->input('PCDAI_total_score'),
+            'abdominal_pain' => $request->input('abdominal_pain'),
+            'patient_functioning' => $request->input('patient_functioning'),
+            'stools_per_day' => $request->input('stools_per_day'),
+            'weight' => $request->input('weight'),
+            'height' => $request->input('height'),
+            'abdomen' => $request->input('abdomen'),
+            'perianal_disease' => $request->input('perianal_disease'),
+            'extraintestinal_manifestations' => $request->input('extraintestinal_manifestations'),
+            'hematocrit' => $request->input('hematocrit'),
+            'ESR' => $request->input('ESR'),
+            'albumin' => $request->input('albumin'),
+        ]);
+
+        
+        
+
+// Redirect or return response as needed after successful insertion
+
+
 
         return redirect('viewers/home');
     }

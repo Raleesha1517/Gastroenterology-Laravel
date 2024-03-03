@@ -608,7 +608,374 @@
       </section>
 
 
+      <h3>Imaging</h3>
+      <h4>UGIE</h4>
+      <section>
+          <div class="form-group">
+              <label for="UGIE_Date">Date</label>
+              <input type="date" name="UGIE_Date" class="form-control" id="UGIE_Date">
+          </div>
+          <div class="form-group">
+              <label for="UGIE_Esophagus_endoscopy">Esophagus endoscopy</label>
+              <select name="UGIE_Esophagus_endoscopy" class="form-control" id="UGIE_Esophagus_endoscopy">
+                  <option value="Normal">Normal</option>
+                  <option value="Abnormal">Abnormal</option>
+                  <option value="Not-assessed">Not-assessed</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="UGIE_Esophagus_histology[]">Esophagus Histology</label><br>
+            <input type="checkbox" name="UGIE_Esophagus_histology[]" value="Normal"> Normal<br>
+            <input type="checkbox" name="UGIE_Esophagus_histology[]" value="Active inflammation"> Active inflammation<br>
+            <input type="checkbox" name="UGIE_Esophagus_histology[]" value="Ulcers"> Ulcers<br>
+            <input type="checkbox" name="UGIE_Esophagus_histology[]" value="Granulomas"> Granulomas<br>
+            <input type="checkbox" name="UGIE_Esophagus_histology[]" value="Easonoplic infiltration"> Easonoplic infiltration<br>
+            <input type="checkbox" name="UGIE_Esophagus_histology[]" value="Not done"> Not done<br>
+        </div>        
+          <div class="form-group">
+            <label for="Stomach_endoscopy">Stomach endoscopy</label>
+            <select name="Stomach_endoscopy" class="form-control" id="Stomach_endoscopy">
+                <option value="Normal">Normal</option>
+                <option value="Abnormal">Abnormal</option>
+                <option value="Not-assessed">Not-assessed</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Stomach_histology[]">Stomach Histology</label><br>
+            <input type="checkbox" name="Stomach_histology[]" value="Normal"> Normal<br>
+            <input type="checkbox" name="Stomach_histology[]" value="Chronic gastritis"> Chronic gastritis<br>
+            <input type="checkbox" name="Stomach_histology[]" value="Ulcers/erosions"> Ulcers/erosions<br>
+            <input type="checkbox" name="Stomach_histology[]" value="Granulomas"> Granulomas<br>
+            <input type="checkbox" name="Stomach_histology[]" value="Easonoplic infiltration"> Easonoplic infiltration<br>
+            <input type="checkbox" name="Stomach_histology[]" value="Dysplacia"> Dysplacia<br>
+            <input type="checkbox" name="Stomach_histology[]" value="Intestinal Metaplasia"> Intestinal Metaplasia<br>
+            <input type="checkbox" name="Stomach_histology[]" value="H pylori"> H pylori<br>
+        </div>
+        <div class="form-group">
+            <label for="Duodenum_endoscopy">Duodenum endoscopy</label>
+            <select name="Duodenum_endoscopy" class="form-control" id="Duodenum_endoscopy">
+                <option value="Normal">Normal</option>
+                <option value="Abnormal">Abnormal</option>
+                <option value="Not-assessed">Not-assessed</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Duodenum_histology[]">Duodenum Histology</label><br>
+            <input type="checkbox" name="Duodenum_histology[]" value="Normal"> Normal<br>
+            <input type="checkbox" name="Duodenum_histology[]" value="Chronic gastritis"> Chronic gastritis<br>
+            <input type="checkbox" name="Duodenum_histology[]" value="Ulcers/erosions"> Ulcers/erosions<br>
+            <input type="checkbox" name="Duodenum_histology[]" value="Granulomas"> Granulomas<br>
+            <input type="checkbox" name="Duodenum_histology[]" value="Easonoplic infiltration"> Easonoplic infiltration<br>
+            <input type="checkbox" name="Duodenum_histology[]" value="Dysplacia"> Dysplacia<br>
+            <input type="checkbox" name="Duodenum_histology[]" value="Abnormal Villous Architecture"> Abnormal Villous Architecture<br>
+            <input type="checkbox" name="Duodenum_histology[]" value="Lymphangiectasia"> Lymphangiectasia<br>
+            <input type="checkbox" name="Duodenum_histology[]" value="H pylori"> H pylori<br>
+        </div>
+        
+          <!-- Similar fields for Stomach and Duodenum endoscopy and histology -->
+          <div class="form-group">
+              <label for="UGIE_Remarks">Remarks</label>
+              <textarea name="UGIE_Remarks" class="form-control" id="UGIE_Remarks"></textarea>
+          </div>
+      
+      <h4>LGIE</h4>
+      <section>
+          <div class="form-group">
+              <label for="LGIE_Date">Date</label>
+              <input type="date" name="LGIE_Date" class="form-control" id="LGIE_Date">
+          </div>
+          <div class="form-group">
+              <label for="LGIE_Terminal_Ileum_endoscopy">Terminal Ileum endoscopy</label>
+              <select name="LGIE_Terminal_Ileum_endoscopy" class="form-control" id="LGIE_Terminal_Ileum_endoscopy">
+                  <option value="Normal">Normal</option>
+                  <option value="Abnormal">Abnormal</option>
+                  <option value="Not-assessed">Not-assessed</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="LGIE_Terminal_Ileum_histology[]">Terminal Ileum Histology</label><br>
+            <input type="checkbox" name="LGIE_Terminal_Ileum_histology[]" value="Normal"> Normal<br>
+            <input type="checkbox" name="LGIE_Terminal_Ileum_histology[]" value="Active Inflammation"> Active Inflammation<br>
+            <input type="checkbox" name="LGIE_Terminal_Ileum_histology[]" value="Ulcers"> Ulcers<br>
+            <input type="checkbox" name="LGIE_Terminal_Ileum_histology[]" value="Granulomas"> Granulomas<br>
+            <input type="checkbox" name="LGIE_Terminal_Ileum_histology[]" value="Easonoplic infiltration"> Easonoplic infiltration<br>
+            <input type="checkbox" name="LGIE_Terminal_Ileum_histology[]" value="Dysplacia"> Dysplacia<br>
+            <input type="checkbox" name="LGIE_Terminal_Ileum_histology[]" value="Abnormal Villous Architecture"> Abnormal Villous Architecture<br>
+            <input type="checkbox" name="LGIE_Terminal_Ileum_histology[]" value="Lymphangiectasia"> Lymphangiectasia<br>
+            <input type="checkbox" name="LGIE_Terminal_Ileum_histology[]" value="H pylori"> H pylori<br>
+        </div>
+        
+          <div class="form-group">
+            <label for="Caecum_endoscopy">Caecum endoscopy</label>
+            <select name="Caecum_endoscopy" class="form-control" id="Caecum_endoscopy">
+                <option value="Normal">Normal</option>
+                <option value="Abnormal">Abnormal</option>
+                <option value="Not-assessed">Not-assessed</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Caecum_histology[]">Caecum Histology</label><br>
+            <input type="checkbox" name="Caecum_histology[]" value="Normal"> Normal<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Ulcers/erosions"> Ulcers/erosions<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Colitis"> Colitis<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Crypt abscess"> Crypt abscess<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Granuloma"> Granuloma<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Fibrosis"> Fibrosis<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Crytitis"> Crytitis<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Dysplacia"> Dysplacia<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Disruption of Villous architecture"> Disruption of Villous architecture<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Basal Plasmacytosis"> Basal Plasmacytosis<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Lamina propria plasma"> Lamina propria plasma<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Easonophilic infiltration"> Easonophilic infiltration<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Other"> Other<br>
+            <input type="checkbox" name="Caecum_histology[]" value="Not done"> Not done<br>
+        </div>
+        <div class="form-group">
+            <label for="Ascending_Colon_endoscopy">Ascending Colon endoscopy</label>
+            <select name="Ascending_Colon_endoscopy" class="form-control" id="Ascending_Colon_endoscopy">
+                <option value="Normal">Normal</option>
+                <option value="Abnormal">Abnormal</option>
+                <option value="Not-assessed">Not-assessed</option>
+            </select>
+        </div>
+        <!-- Histology field is text input, as specified -->
+        <div class="form-group">
+            <label for="Ascending_Colon_histology">Ascending Colon Histology</label>
+            <input type="text" name="Ascending_Colon_histology" class="form-control" id="Ascending_Colon_histology">
+        </div>
+          <!-- Similar fields for Caecum, Ascending Colon, Transverse Colon, Descending Colon, Sigmoid Colon, Rectum endoscopy and histology -->
+          <div class="form-group">
+              <label for="LGIE_Remarks">Remarks</label>
+              <textarea name="LGIE_Remarks" class="form-control" id="LGIE_Remarks"></textarea>
+          </div>
+    <div class="form-group">
+        <label for="Transverse_Colon_endoscopy">Transverse Colon endoscopy</label>
+        <select name="Transverse_Colon_endoscopy" class="form-control" id="Transverse_Colon_endoscopy">
+            <option value="Normal">Normal</option>
+            <option value="Abnormal">Abnormal</option>
+            <option value="Not-assessed">Not-assessed</option>
+        </select>
+    </div>
+    <!-- Histology field is text input, as specified -->
+    <div class="form-group">
+        <label for="Transverse_Colon_histology">Transverse Colon Histology</label>
+        <input type="text" name="Transverse_Colon_histology" class="form-control" id="Transverse_Colon_histology">
+    </div>
+    <div class="form-group">
+        <label for="Descending_Colon_endoscopy">Descending Colon endoscopy</label>
+        <select name="Descending_Colon_endoscopy" class="form-control" id="Descending_Colon_endoscopy">
+            <option value="Normal">Normal</option>
+            <option value="Abnormal">Abnormal</option>
+            <option value="Not-assessed">Not-assessed</option>
+        </select>
+    </div>
+    <!-- Histology field is text input, as specified -->
+    <div class="form-group">
+        <label for="Descending_Colon_histology">Descending Colon Histology</label>
+        <input type="text" name="Descending_Colon_histology" class="form-control" id="Descending_Colon_histology">
+    </div>
+    <div class="form-group">
+        <label for="Sigmoid_Colon_endoscopy">Sigmoid Colon endoscopy</label>
+        <select name="Sigmoid_Colon_endoscopy" class="form-control" id="Sigmoid_Colon_endoscopy">
+            <option value="Normal">Normal</option>
+            <option value="Abnormal">Abnormal</option>
+            <option value="Not-assessed">Not-assessed</option>
+        </select>
+    </div>
+    <!-- Histology field is text input, as specified -->
+    <div class="form-group">
+        <label for="Sigmoid_Colon_histology">Sigmoid Colon Histology</label>
+        <input type="text" name="Sigmoid_Colon_histology" class="form-control" id="Sigmoid_Colon_histology">
+    </div>
+    <div class="form-group">
+        <label for="Rectum_endoscopy">Rectum endoscopy</label>
+        <select name="Rectum_endoscopy" class="form-control" id="Rectum_endoscopy">
+            <option value="Normal">Normal</option>
+            <option value="Abnormal">Abnormal</option>
+            <option value="Not-assessed">Not-assessed</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Rectum_histology">Rectum Histology</label>
+        <input type="text" name="Rectum_histology" class="form-control" id="Rectum_histology">
+    </div>
+      </section>
+
+      
+      <h4>Disease Activity</h4>
+
+      <div class="form-group">
+        <label for="age_at_diagnosis">Age at Diagnosis</label>
+        <select name="age_at_diagnosis" class="form-control" id="age_at_diagnosis">
+            <option value="A1a">0-<10y</option>
+            <option value="A1b">10-17y</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="disease_location_cd">Disease Location in CD</label>
+        <select name="disease_location_cd" class="form-control" id="disease_location_cd">
+            <option value="L1">L1</option>
+            <option value="L2">L2</option>
+            <option value="L3">L3</option>
+            <option value="L4a">L4a</option>
+            <option value="L4b">L4b</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="disease_behavior_cd">Disease Behavior in CD</label>
+        <select name="disease_behavior_cd" class="form-control" id="disease_behavior_cd">
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+            <option value="B3">B3</option>
+            <option value="B2B3">B2B3</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="disease_location_uc">Disease Location in UC</label>
+        <select name="disease_location_uc" class="form-control" id="disease_location_uc">
+            <option value="E1">E1</option>
+            <option value="E2">E2</option>
+            <option value="E3">E3</option>
+            <option value="E4">E4</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="disease_behavior_uc">Disease Behavior in UC</label>
+        <select name="disease_behavior_uc" class="form-control" id="disease_behavior_uc">
+            <option value="s0">s0</option>
+            <option value="s1">s1</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="perianal_disease_modifier">Perianal Disease Modifier</label>
+        <select name="perianal_disease_modifier" class="form-control" id="perianal_disease_modifier">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label for="growth">Growth</label>
+        <select name="growth" class="form-control" id="growth">
+            <option value="G0">G0</option>
+            <option value="G1">G1</option>
+        </select>
+    </div>
+    
+
+      <div class="form-group">
+          <label for="PCDAI_total_score">PCDAI Total Score</label>
+          <input type="number" name="PCDAI_total_score" class="form-control" id="PCDAI_total_score" min="0">
+      </div>
+  
+      <div class="form-group">
+          <label for="abdominal_pain">Abdominal Pain (0/5/10)</label>
+          <select name="abdominal_pain" class="form-control" id="abdominal_pain">
+              <option value="0">0</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+          </select>
+      </div>
+  
+      <div class="form-group">
+          <label for="patient_functioning">Patient Functioning (0/5/10)</label>
+          <select name="patient_functioning" class="form-control" id="patient_functioning">
+              <option value="0">0</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+          </select>
+      </div>
+  
+      <div class="form-group">
+          <label for="stools_per_day">Stools per Day (0/5/10)</label>
+          <select name="stools_per_day" class="form-control" id="stools_per_day">
+              <option value="0">0</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+          </select>
+      </div>
+  
+      <div class="form-group">
+          <label for="weight">Weight (0/5/10)</label>
+          <select name="weight" class="form-control" id="weight">
+              <option value="0">0</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+          </select>
+      </div>
+  
+      <div class="form-group">
+          <label for="height">Height (0/5/10)</label>
+          <select name="height" class="form-control" id="height">
+              <option value="0">0</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+          </select>
+      </div>
+  
+      <div class="form-group">
+          <label for="abdomen">Abdomen (0/5/10)</label>
+          <select name="abdomen" class="form-control" id="abdomen">
+              <option value="0">0</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+          </select>
+      </div>
+  
+      <div class="form-group">
+          <label for="perianal_disease">Perianal Disease (0/5/10)</label>
+          <select name="perianal_disease" class="form-control" id="perianal_disease">
+              <option value="0">0</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+          </select>
+      </div>
+  
+      <div class="form-group">
+          <label for="extraintestinal_manifestations">Extraintestinal Manifestations (0/5/10)</label>
+          <select name="extraintestinal_manifestations" class="form-control" id="extraintestinal_manifestations">
+              <option value="0">0</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+          </select>
+      </div>
+  
+      <div class="form-group">
+          <label for="hematocrit">Hematocrit (0/2.5/5)</label>
+          <select name="hematocrit" class="form-control" id="hematocrit">
+              <option value="0">0</option>
+              <option value="2.5">2.5</option>
+              <option value="5">5</option>
+          </select>
+      </div>
+  
+      <div class="form-group">
+          <label for="ESR">ESR (0/2.5/5)</label>
+          <select name="ESR" class="form-control" id="ESR">
+              <option value="0">0</option>
+              <option value="2.5">2.5</option>
+              <option value="5">5</option>
+          </select>
+      </div>
+  
+      <div class="form-group">
+          <label for="albumin">Albumin (0/5/10)</label>
+          <select name="albumin" class="form-control" id="albumin">
+              <option value="0">0</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+          </select>
+      </div>
   </div>
+
+
+   
+
   <!-- /.card-body -->
   <div class="card-footer">
       <button type="submit" class="btn btn-primary">Submit</button>
