@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\IBD\IbdPresentationModel;
 use App\Models\IBD\ibdLaboratoryDiagnosis;
 use App\Models\IBD\ibdImagingModel;
+use App\Models\IBD\ibdDiseaseActivityModel;
+use App\Models\IBD\ibdPatientMedicationModel;
 
 class ibdModel extends Model
 {
@@ -40,7 +42,14 @@ class ibdModel extends Model
 
     public function ibdDiseaseActivity()
     {
-        return $this->hasOne(ibdImagingModel::class, 'ClinicalID', 'ClinicalID');
+        return $this->hasOne(ibdDiseaseActivityModel::class, 'ClinicalID', 'ClinicalID');
     }
+
+    public function ibdPatientMedication()
+    {
+        return $this->hasOne(ibdPatientMedicationModel::class, 'ClinicalID', 'ClinicalID');
+    }
+
+
 }
 

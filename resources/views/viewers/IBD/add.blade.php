@@ -971,8 +971,54 @@
               <option value="10">10</option>
           </select>
       </div>
+
+      <h4>Patient Medication </h4>
+
+    <div class="form-group">
+        <label for="medication_used[]">Medication Used</label><br>
+        <input type="checkbox" name="medication_used[]" value="oral prednisilone"> Oral Prednisilone<br>
+        <input type="checkbox" name="medication_used[]" value="iv methyl prednisilone"> IV Methyl Prednisilone<br>
+        <input type="checkbox" name="medication_used[]" value="infliximab"> Infliximab<br>
+        <input type="checkbox" name="medication_used[]" value="mesalazine"> Mesalazine<br>
+        <input type="checkbox" name="medication_used[]" value="azathioprine"> Azathioprine<br>
+        <input type="checkbox" name="medication_used[]" value="oral dexamethasone"> Oral Dexamethasone<br>
+        <input type="checkbox" name="medication_used[]" value="sulfasalazine"> Sulfasalazine<br>
+    </div>
+
+    <div class="form-group">
+        <label for="initiation_date">Date of Initiation of Treatment</label>
+        <input type="date" name="initiation_date" class="form-control" id="initiation_date">
+    </div>
+
+    <div class="form-group">
+        <label for="dose">Dose</label>
+        <input type="text" name="dose" class="form-control" id="dose">
+    </div>
+
+    <div class="form-group">
+        <label for="medication_on_discharge[]">Medication on Discharge</label><br>
+        <input type="checkbox" name="medication_on_discharge[]" value="oral prednisilone"> Oral Prednisilone<br>
+        <input type="checkbox" name="medication_on_discharge[]" value="iv methyl prednisilone"> IV Methyl Prednisilone<br>
+        <input type="checkbox" name="medication_on_discharge[]" value="infliximab"> Infliximab<br>
+        <input type="checkbox" name="medication_on_discharge[]" value="mesalazine"> Mesalazine<br>
+    </div>
+
+    <div class="form-group">
+        <label for="pre_existing_immunosuppressants">Is the patient on pre-existing immunosuppressants at diagnosis?</label>
+        <select name="pre_existing_immunosuppressants" class="form-control" id="pre_existing_immunosuppressants">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="pre_existing_medications">Pre-existing Medications</label>
+        <input type="text" name="pre_existing_medications" class="form-control" id="pre_existing_medications">
+    </div>
   </div>
 
+
+  
 
    
 

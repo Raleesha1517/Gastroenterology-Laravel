@@ -283,6 +283,21 @@ class IBDController extends Controller
             'albumin' => $request->input('albumin'),
         ]);
 
+        $medication_used = implode(',', $request->input('medication_used'));
+        $initiation_date = $request->input('initiation_date');
+        $dose = $request->input('dose');
+        $medication_on_discharge = implode(',', $request->input('medication_on_discharge'));
+        $pre_existing_immunosuppressants = $request->input('pre_existing_immunosuppressants');
+        $pre_existing_medications = $request->input('pre_existing_medications');
+    
+        $ibd->ibdPatientMedication()->create([
+            'medication_used' => $medication_used,
+            'initiation_date' => $initiation_date,
+            'dose' => $dose,
+            'medication_on_discharge' => $medication_on_discharge,
+            'pre_existing_immunosuppressants' => $pre_existing_immunosuppressants,
+            'pre_existing_medications' => $pre_existing_medications,
+        ]);
         
         
 
